@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enhanced HTML5 Form Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+    }
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+    fieldset {
+      margin-bottom: 1.5rem;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 0.5rem;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the Enhanced HTML5 Demo</h1>
+    <p>This page demonstrates advanced HTML5 elements including lists, tables, embedded media, and a form with built-in validation.</p>
+  </header>
+
+  <section>
+    <h2>HTML5 Features List</h2>
+    <ul>
+      <li>Semantic Structure</li>
+      <li>Multimedia Integration</li>
+      <li>Accessible Forms</li>
+      <li>Native Form Validation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Comparison Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>HTML4</th>
+          <th>HTML5</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Form Validation</td>
+          <td>JavaScript required</td>
+          <td>Built-in attributes</td>
+        </tr>
+        <tr>
+          <td>Media Support</td>
+          <td>Plugins (e.g., Flash)</td>
+          <td>&lt;audio&gt; and &lt;video&gt; tags</td>
+        </tr>
+        <tr>
+          <td>Semantic Tags</td>
+          <td>Limited</td>
+          <td>Many new tags (e.g., &lt;section&gt;, &lt;article&gt;)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Example</h2>
+    <figure>
+      <img src="https://via.placeholder.com/600x200" alt="Placeholder banner image" width="600">
+      <figcaption>Sample image using semantic &lt;figure&gt; and &lt;figcaption&gt;.</figcaption>
+    </figure>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>Listen to the sample audio above.</p>
+  </section>
+
+  <section>
+    <h2>HTML5 Contact Form</h2>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="John Doe" autocomplete="name">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required placeholder="john@example.com" autocomplete="email">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+        <small>Format: 10 digits, no spaces or dashes</small>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Preferences</legend>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="4" maxlength="12" placeholder="yourusername">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Create a password">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+          <option value="prefer-not">Prefer not to say</option>
+        </select>
+
+        <label>
+          <input type="checkbox" name="subscribe" checked>
+          Subscribe to newsletter
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feedback</legend>
+        <label for="comments">Your comments:</label>
+        <textarea id="comments" name="comments" rows="4" maxlength="500" placeholder="Enter your message here..."></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Showcase. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
